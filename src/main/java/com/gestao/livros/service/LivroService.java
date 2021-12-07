@@ -1,8 +1,7 @@
-package com.example.demo.service;
+package com.gestao.livros.service;
 
-import com.example.demo.model.Editora;
-import com.example.demo.model.Livro;
-import com.example.demo.repository.LivroRepository;
+import com.gestao.livros.model.Livro;
+import com.gestao.livros.repository.LivroRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

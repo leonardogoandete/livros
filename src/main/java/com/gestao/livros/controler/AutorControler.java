@@ -1,8 +1,7 @@
-package com.example.demo.controler;
+package com.gestao.livros.controler;
 
-import com.example.demo.model.Autor;
-import com.example.demo.repository.AutorRepository;
-import com.example.demo.service.AutorService;
+import com.gestao.livros.model.Autor;
+import com.gestao.livros.service.AutorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

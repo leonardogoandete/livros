@@ -1,8 +1,8 @@
-package com.example.demo.controler;
+package com.gestao.livros.controler;
 
-import com.example.demo.model.Autor;
-import com.example.demo.model.Editora;
-import com.example.demo.service.EditoraService;
+
+import com.gestao.livros.model.Editora;
+import com.gestao.livros.service.EditoraService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

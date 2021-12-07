@@ -1,6 +1,6 @@
-package com.example.demo.repository;
+package com.gestao.livros.repository;
 
-import com.example.demo.model.Autor;
+import com.gestao.livros.model.Autor;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

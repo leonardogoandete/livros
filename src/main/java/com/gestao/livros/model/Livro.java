@@ -1,4 +1,4 @@
-package com.example.demo.model;
+package com.gestao.livros.model;
 
 import lombok.Data;
 
