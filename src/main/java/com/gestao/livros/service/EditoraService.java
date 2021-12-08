@@ -1,6 +1,5 @@
 package com.gestao.livros.service;
 
-import com.gestao.livros.model.Autor;
 import com.gestao.livros.model.Editora;
 import com.gestao.livros.repository.EditoraRepository;
 import org.springframework.beans.factory.annotation.Autowired;
