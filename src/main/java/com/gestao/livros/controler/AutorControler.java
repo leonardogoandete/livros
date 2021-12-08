@@ -25,4 +25,10 @@ public class AutorControler {
     public void adicionarAutor(@RequestBody Autor autor){
         autorService.adicionaAutor(autor);
     }
+
+    @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.ACCEPTED)
+    public void deletaAutor(@PathVariable int id){
+        autorService.apagaAutor(id);
+    }
 }

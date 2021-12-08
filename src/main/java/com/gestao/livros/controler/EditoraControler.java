@@ -26,4 +26,10 @@ public class EditoraControler {
     public void adicionarEditora(@RequestBody Editora editora){
         editoraService.adicionaEditora(editora);
     }
+
+    @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.ACCEPTED)
+    public void deletaEditora(@PathVariable int id){
+        editoraService.apagaEditora(id);
+    }
 }

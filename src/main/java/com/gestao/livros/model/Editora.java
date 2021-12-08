@@ -12,7 +12,7 @@ public class Editora implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int codigo;
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     private String nome;
 
     @OneToMany(mappedBy = "editora", cascade = CascadeType.ALL)

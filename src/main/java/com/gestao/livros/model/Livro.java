@@ -13,7 +13,7 @@ public class Livro implements Serializable {
     @GeneratedValue
     private int codigo;
 
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     private String titulo;
 
     @Column(nullable = false)

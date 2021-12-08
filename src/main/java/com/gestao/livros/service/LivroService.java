@@ -20,4 +20,8 @@ public class LivroService {
     public List<Livro> buscaLivrosNome(String nome){
         return (nome != null) ? livroRepo.findBytituloContaining(nome) : livroRepo.findAll();
     }
+
+    public void apagaLivro(int id){
+        livroRepo.deleteById(id);
+    }
 }

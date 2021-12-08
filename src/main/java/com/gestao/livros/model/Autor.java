@@ -13,7 +13,7 @@ public class Autor implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int codigo;
-    @Column(nullable = false)
+    @Column(nullable = false,unique = true)
     private String primeiroNome;
     @Column(nullable = false)
     private String ultimoNome;

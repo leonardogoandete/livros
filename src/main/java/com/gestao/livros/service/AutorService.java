@@ -20,4 +20,8 @@ public class AutorService {
     public List<Autor> buscaAutorNome(String nome){
         return (nome != null) ? autorRepo.findByprimeiroNomeContaining(nome) : autorRepo.findAll();
     }
+
+    public void apagaAutor(int id){
+        autorRepo.deleteById(id);
+    }
 }

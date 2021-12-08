@@ -21,4 +21,8 @@ public class EditoraService {
     public List<Editora> buscaEditoraNome(String nome){
         return (nome != null) ? editoraRepo.findBynomeContaining(nome) : editoraRepo.findAll();
     }
+
+    public void apagaEditora(int id){
+        editoraRepo.deleteById(id);
+    }
 }

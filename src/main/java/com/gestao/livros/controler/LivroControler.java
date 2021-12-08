@@ -25,4 +25,10 @@ public class LivroControler {
     public void adicionarLivro(@RequestBody Livro livro){
         livroService.adicionarLivro(livro);
     }
+
+    @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.ACCEPTED)
+    public void deletaLivro(@PathVariable int id){
+        livroService.apagaLivro(id);
+    }
 }
